@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         AWS_REGION     = "us-west-2"
-        AWS_ACCOUNT_ID = "880882846543"
+        AWS_ACCOUNT_ID = "243112136641"
         ECR_REPOSITORY = "myrepo"
 
         IMAGE_NAME = "myrepo"
