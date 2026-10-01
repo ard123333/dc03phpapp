@@ -58,7 +58,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
-                    helm upgrade --install phpapptest ./myphpapp \
+                    helm upgrade --install phpapptest ./helm-chart \
                     --set image.repository=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY} \
                     --set image.tag=${IMAGE_TAG}
                 '''
